@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:annotation-config/>
+
+	<!-- Setter injection -->
+	<bean id="person3" class="com.training.spring.Person" >
+
+		<constructor-arg index = "0" value = "Sam" />
+		<constructor-arg index = "1" value = "Smith" />
+		<constructor-arg index = "2" value = "23" />
+		
+	</bean>
+	
+	<!-- Constructor injection -->
+	<bean id="bird2" class="com.training.spring.Bird">
+
+		<constructor-arg index = "0" value = "Titu" />
+		<constructor-arg index = "1" value = "3" />
+		<constructor-arg index = "2" value = "Parrot" />
+		
+
+	</bean>
+	
+	<bean id="dog1" class="com.training.spring.Dog">
+
+		<constructor-arg index = "0" value = "Alpha" />
+		<constructor-arg index = "1" value = "2" />
+		<constructor-arg index = "2" value = "Pug" />
+		
+
+	</bean>
+	
+	<bean id="animal" class="com.training.spring.Animal">
+
+		<constructor-arg index = "0" value = "Parker" />
+		<constructor-arg index = "1" value = "2" />
+
+	</bean>
+
+ </beans>
+
